@@ -1,0 +1,94 @@
+Last login: Thu Feb  4 10:27:38 on ttys000
+imac-burakova-alisa:~ alisa971108$ git
+xcrun: error: active developer path ("/Volumes/Xcode/Xcode.app/Contents/Developer") does not exist, use `xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools (or see `man xcode-select`)
+imac-burakova-alisa:~ alisa971108$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Find by binary search the change that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+imac-burakova-alisa:~ alisa971108$ cd documents/physics_ia
+-bash: cd: documents/physics_ia: No such file or directory
+imac-burakova-alisa:~ alisa971108$ cd documents/phys_ia
+imac-burakova-alisa:phys_ia alisa971108$ ls
+ia_file.rtf
+imac-burakova-alisa:phys_ia alisa971108$ git init
+Initialized empty Git repository in /Users/alisa971108/Documents/Phys_ia/.git/
+imac-burakova-alisa:phys_ia alisa971108$ git add .
+imac-burakova-alisa:phys_ia alisa971108$ git commit -m "my first file"
+[master (root-commit) a4f64ab] my first file
+ Committer: алиса <alisa971108@imac-burakova-alisa.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 7 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 ia_file.rtf
+imac-burakova-alisa:phys_ia alisa971108$ git remote add origin https://github.com/alisonbur/IA.git
+imac-burakova-alisa:phys_ia alisa971108$ git push origin master
+Username for 'https://github.com': alisonbur
+Password for 'https://alisonbur@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/alisonbur/IA.git/'
+imac-burakova-alisa:phys_ia alisa971108$ git push origin master
+Username for 'https://github.com': alisonbur
+Password for 'https://alisonbur@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/alisonbur/IA.git/'
+imac-burakova-alisa:phys_ia alisa971108$ git push origin master
+Username for 'https://github.com': alisonbur
+Password for 'https://alisonbur@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 724 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/alisonbur/IA.git
+ * [new branch]      master -> master
+imac-burakova-alisa:phys_ia alisa971108$ 
